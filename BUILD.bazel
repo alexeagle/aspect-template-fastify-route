@@ -5,6 +5,10 @@ npm_link_all_packages(name = "node_modules")
 
 npm_package(
     name = "pkg",
-    srcs = ["package.json", "index.js", "index.html"],
+    srcs = [
+        "package.json",
+        "index.js", # keep
+        "index.html", # keep
+    ],
     visibility = ["//visibility:public"],
 )
